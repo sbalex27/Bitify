@@ -1,0 +1,31 @@
+﻿//---------------------------------------
+// UNIDAD LEXICO.H
+//---------------------------------------
+const int MAXTOKENS = 100;
+const int ANCHOTOKEN = 20;
+const int ANCHOLEXEMA = 255;
+//--------------------------
+class Automata
+ {
+   int iEdoAct;
+   char *psTexto;
+   char NextChar(int &iI) { return psTexto[iI++]; }
+  public :
+   int iReconoce(char *, int &, int &, int);
+ };
+//---------------------------
+
+//---------------------------
+class Lexico
+ {
+   int iI,iIniToken,iNoTokens;
+   char asTokens[MAXTOKENS][ANCHOTOKEN];
+   char asLexemas[MAXTOKENS][ANCHOLEXEMA];
+   char sLexema[255];
+   Automata oAFD;
+  public :
+   void Analiza(char *);
+   void Inicia(void);
+   void Lexema(char *); 
+ };
+ //----------------------------
