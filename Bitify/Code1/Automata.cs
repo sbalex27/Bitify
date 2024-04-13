@@ -19,7 +19,10 @@ namespace Bitify.Code1
             return psTexto[iI++].ToString();
         }
 
-        public abstract int iReconoce(string a, int b, int c);
+        public int iReconoce(string a, int b, int c)
+        {
+            return 0;
+        }
     }
 
     internal abstract class Lexico
