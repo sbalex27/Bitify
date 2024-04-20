@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Bitify.Code1
 {
-    internal abstract class Automata
+    internal class Automata
     {
         const int MAXTOKENS = 256;
         const int ANCHOTOKEN = 20;
